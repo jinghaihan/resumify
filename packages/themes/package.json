@@ -1,0 +1,16 @@
+{
+  "name": "@resumify/themes",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@iconify/react": "catalog:icons",
+    "@resumify/shared": "workspace:*",
+    "@streamdown/cjk": "catalog:markdown",
+    "@streamdown/code": "catalog:markdown",
+    "@streamdown/math": "catalog:markdown",
+    "@streamdown/mermaid": "catalog:markdown",
+    "streamdown": "catalog:markdown"
+  }
+}

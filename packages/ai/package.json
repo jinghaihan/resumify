@@ -1,0 +1,17 @@
+{
+  "name": "@resumify/ai",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "catalog:ai",
+    "@ai-sdk/google": "catalog:ai",
+    "@ai-sdk/openai": "catalog:ai",
+    "@ai-sdk/zai": "catalog:ai",
+    "ai": "catalog:ai",
+    "ofetch": "catalog:network",
+    "zod": "catalog:utils"
+  }
+}

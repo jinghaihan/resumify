@@ -1,0 +1,433 @@
+{
+  "button": {
+    "submit": "Submit",
+    "add": "Add",
+    "save": "Save",
+    "reset": "Reset",
+    "confirm": "OK",
+    "cancel": "Cancel",
+    "select": "Select",
+    "delete": "Delete",
+    "copy": "Copy",
+    "download": "Download",
+    "edit": "Edit",
+    "stop": "Stop",
+    "resume": "Resume",
+    "dark-toggle": "Toggle Dark Mode",
+    "select-langauge": "Select Language",
+    "print": "Export PDF"
+  },
+
+  "field": {
+    "label": "Label",
+    "value": "Value",
+    "description": "Description",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "achievements": "Key Achievements"
+  },
+
+  "status": {
+    "empty": "Data Not Found",
+    "loading": "Loading...",
+    "error": "Error Occurred"
+  },
+
+  "confirm": {
+    "reset": {
+      "title": "Reset",
+      "description": "Are you sure you want to reset this section?"
+    },
+    "clear-resume": {
+      "title": "Clear Resume",
+      "description": "Are you sure you want to clear your resume?"
+    },
+    "snapshot-restore-before": {
+      "title": "Restore to before",
+      "description": "Restore the resume to the state before this optimization?"
+    },
+    "snapshot-restore-after": {
+      "title": "Restore to after",
+      "description": "Restore the resume to the state after this optimization?"
+    },
+    "snapshot-delete": {
+      "title": "Delete snapshot",
+      "description": "Delete this snapshot? This cannot be undone."
+    },
+    "chat-history-delete": {
+      "title": "Delete chat",
+      "description": "Delete this chat history? This cannot be undone."
+    }
+  },
+
+  "message": {
+    "copy-success": "Copied to clipboard",
+    "save-success": "Resume saved successfully",
+    "save-failed": "Failed to save resume",
+    "resume-update-success": "Resume updated successfully",
+    "resume-update-failed": "Failed to update resume",
+    "resume-rollback-success": "Resume restored successfully",
+    "resume-rollback-failed": "Failed to restore resume",
+    "snapshot-delete-success": "Snapshot deleted",
+    "snapshot-delete-failed": "Failed to delete snapshot",
+    "export-success": "Resume data exported successfully",
+    "export-failed": "Export failed, please check your data",
+    "import-success": "Resume data imported successfully",
+    "import-failed": "Invalid JSON format, Please check your data",
+    "pdf-exporting": "Exporting PDF...",
+    "pdf-export-success": "PDF exported successfully",
+    "pdf-export-failed": "PDF export failed",
+    "upload-format-failed": "Only JPEG, PNG, and WebP images are supported",
+    "upload-size-failed": "Image size must be less than 5MB",
+    "crop-failed": "Failed to crop image",
+    "share-create-success": "Share link created and copied to clipboard",
+    "share-create-failed": "Failed to create share link",
+    "share-update-success": "Share link updated successfully",
+    "share-update-failed": "Failed to update share link",
+    "resume-create-success": "Resume created successfully",
+    "resume-create-failed": "Failed to create resume",
+    "resume-rename-success": "Resume renamed successfully",
+    "resume-rename-failed": "Failed to rename resume",
+    "resume-duplicate-success": "Resume duplicated successfully",
+    "resume-duplicate-failed": "Failed to duplicate resume",
+    "resume-delete-success": "Resume deleted successfully",
+    "resume-delete-failed": "Failed to delete resume",
+    "resume-load-success": "Resume loaded successfully",
+    "resume-load-failed": "Failed to load resume"
+  },
+
+  "icon-picker": {
+    "title": "Select an Icon",
+    "description": "Search icons from iconify",
+    "placeholder": "Search icons..."
+  },
+
+  "tag-input": {
+    "placeholder": "Type and press Enter to add",
+    "max-length-reached": "Maximum number of tags reached"
+  },
+
+  "photo-uploader": {
+    "title": "Adjust Photo",
+    "description": "Crop and adjust your photo size",
+    "shape": {
+      "square": "Square (1:1)",
+      "circle": "Circle (1:1)",
+      "inch1": "Inch 1 (25×35mm)",
+      "inch2": "Inch 2 (35×53mm)"
+    }
+  },
+
+  "navigation": {
+    "personal-info": "Personal Info",
+    "skill": "Skill",
+    "work-experience": "Work Experience",
+    "project-experience": "Project Experience",
+    "section": "Custom Section",
+    "settings": "Export Settings",
+    "theme": "Theme",
+    "model-provider": "Model Provider",
+    "chat": "Chat",
+    "resumes": "My Resumes",
+    "shares": "Shared Links"
+  },
+
+  "personal-info": {
+    "title": "Personal Information",
+    "subtitle": "Edit your personal details",
+    "name": "Name",
+    "job-objective": "Job Objective",
+    "photo": "Photo",
+    "location": "Location",
+    "age": "Age",
+    "phone": "Phone",
+    "email": "Email",
+    "school": "School",
+    "major": "Major"
+  },
+
+  "social-links": {
+    "title": "Social Links",
+    "subtitle": "Edit your social links"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Add your professional skills and expertise",
+    "placeholder": "Enter your skill or expertise"
+  },
+
+  "work-experience": {
+    "title": "Work Experience",
+    "subtitle": "Add your professional work experience and achievements",
+    "name": "Company / Organization",
+    "role": "Position / Role"
+  },
+
+  "project-experience": {
+    "title": "Projects",
+    "subtitle": "Showcase your personal or professional projects",
+    "name": "Project Name",
+    "role": "Role / Title",
+    "techStack": "Tech Stack"
+  },
+
+  "custom-section": {
+    "title": "Custom Section",
+    "subtitle": "Add custom sections with markdown content. Use markdown headers to define section titles.",
+    "placeholder": "Enter your custom section"
+  },
+
+  "settings": {
+    "title": "Export Settings",
+    "subtitle": "Configure PDF export options including paper size, margins, and format settings.",
+    "reset-to-defaults": "Reset to Defaults",
+    "page-format": {
+      "title": "Page Format",
+      "description": "Configure paper size and orientation",
+      "paper-size": "Paper Size",
+      "landscape": "Landscape Orientation",
+      "landscape-description": "Print in landscape mode",
+      "prefer-css-page-size": "Prefer CSS Page Size",
+      "prefer-css-page-size-description": "Use @page size from CSS"
+    },
+    "margins": {
+      "title": "Margins",
+      "description": "Configure page margins (in inches)",
+      "top": "Top",
+      "bottom": "Bottom",
+      "left": "Left",
+      "right": "Right"
+    },
+    "scale-and-pages": {
+      "title": "Scale and Pages",
+      "description": "Configure rendering scale and page selection",
+      "scale": "Scale",
+      "range": "Range",
+      "page-ranges": "Page Ranges",
+      "start-page": "Start Page",
+      "end-page": "End Page",
+      "leave-empty-tip": "Leave empty to print all pages"
+    },
+    "display-options": {
+      "title": "Display Options",
+      "description": "Configure what to include in the PDF",
+      "print-background": "Print Background",
+      "print-background-description": "Include background graphics",
+      "omit-background": "Omit Background",
+      "omit-background-description": "Generate transparent PDF",
+      "display-header-footer": "Display Header/Footer",
+      "display-header-footer-description": "Show header and footer sections"
+    },
+    "accessibility": {
+      "title": "Accessibility (Experimental)",
+      "description": "Enable experimental PDF features",
+      "tagged": "Tagged PDF",
+      "tagged-description": "Generate accessible PDF with tags",
+      "outline": "Document Outline",
+      "outline-description": "Generate document outline/bookmarks"
+    }
+  },
+
+  "export": {
+    "title": "Export Resume Data",
+    "description": "Edit and export resume JSON data",
+    "download": "Download",
+    "update": "Update Resume",
+    "content": "JSON Content",
+    "placeholder": "Resume JSON Content"
+  },
+
+  "import": {
+    "title": "Import Resume Data",
+    "description": "Upload a JSON file or paste JSON content",
+    "import": "Import",
+    "upload": "Upload File"
+  },
+
+  "zoom": {
+    "zoom-in": "Zoom In",
+    "zoom-out": "Zoom Out",
+    "reset-zoom": "Reset Zoom",
+    "hold-space-drag": "Hold Space to Drag"
+  },
+
+  "theme": {
+    "title": "Resume Templates",
+    "subtitle": "Select a style theme for your resume content",
+    "select-preset": "Select Preset",
+    "layout-mode": "Layout Mode",
+    "personal-info-layout": "Personal Info Layout",
+    "experience-header-layout": "Experience Header Layout",
+    "tech-stack-style": "Tech Stack Style",
+    "typography": "Typography",
+    "single": "Single Column",
+    "double": "Double Column",
+    "reversed-double": "Reversed Double Column",
+    "stacked": "Stacked",
+    "inline": "Inline",
+    "opposite-ends": "Opposite Ends",
+    "colored": "Colored",
+    "muted": "Muted",
+    "outline": "Outline",
+    "rounded": "Rounded",
+    "square": "Square",
+    "github": "GitHub"
+  },
+
+  "resume-list": {
+    "title": "My Resumes",
+    "subtitle": "Manage and switch between your resumes",
+    "current": "Current",
+    "resume-name": "Resume Name",
+    "load": "Load",
+    "rename": "Rename",
+    "duplicate": "Duplicate",
+    "create-modal": {
+      "title": "Create Resume",
+      "description": "Enter a name for this resume"
+    },
+    "rename-modal": {
+      "title": "Rename Resume",
+      "description": "Enter a new name for this resume"
+    },
+    "duplicate-modal": {
+      "title": "Duplicate Resume",
+      "description": "Enter a name for the duplicated resume"
+    },
+    "delete-confirm": {
+      "title": "Delete Resume",
+      "description": "Are you sure you want to delete this resume?"
+    }
+  },
+
+  "share-list": {
+    "title": "Shared Links",
+    "subtitle": "Manage links to share your resume",
+    "original-resume": "Original Resume",
+    "view-count": "views",
+    "qr-code": "QR Code",
+    "delete-confirm": {
+      "title": "Delete Share Link",
+      "description": "Are you sure you want to delete this share link?"
+    },
+    "status": {
+      "one-time": "One-time",
+      "stopped": "Stopped",
+      "active": "Active",
+      "expired": "Expired"
+    }
+  },
+
+  "share-button": {
+    "title": "Share",
+    "create-link": "New Link",
+    "view-links": "View Links",
+    "data-link": "Link with Data",
+    "data-link-confirm": {
+      "title": "Generate Data Link",
+      "description": "This will create a permanent link containing your resume data. Anyone with this link can view your resume. Continue?"
+    }
+  },
+
+  "create-share": {
+    "title": "Create Share Link",
+    "description": "Create a shareable link for your resume",
+    "share-name": "Share Name",
+    "share-name-placeholder": "My Resume Share",
+    "one-time": "One-time Link",
+    "expires-at": "Expiration",
+    "never": "Never",
+    "1h": "1 Hour",
+    "24h": "24 Hours",
+    "7d": "7 Days",
+    "30d": "30 Days",
+    "custom": "Custom Date",
+    "select-date": "Select Date",
+    "password": "Password (Optional)",
+    "password-placeholder": "Enter password",
+    "password-hint": "Leave empty for no password protection",
+    "name-required-failed": "Please enter a share name",
+    "date-required-failed": "Please select a date",
+    "invalid-date-failed": "Please select a valid date"
+  },
+
+  "configure-share": {
+    "title": "Configure Share Link",
+    "description": "Update share link settings"
+  },
+
+  "share-access": {
+    "share-not-found": "Share Not Found",
+    "share-not-found-description": "This share link does not exist or has been deleted.",
+    "share-no-longer-accessible": "Share No Longer Accessible",
+    "share-stopped-by-owner": "This share has been stopped by the owner.",
+    "share-expired": "This share has expired.",
+    "one-time-share-consumed": "This one-time share link has been used and can no longer be accessed.",
+    "password-required": "Password Required",
+    "password-required-description": "This share is password protected",
+    "enter-password": "Enter password",
+    "invalid-password": "Invalid password",
+    "verify-error": "Verification failed"
+  },
+
+  "model-provider": {
+    "title": "Model Providers",
+    "subtitle": "Configure AI model providers for AI features",
+    "privacy-notice": {
+      "title": "Privacy Notice",
+      "description": "Your API keys are stored locally in your browser and never sent to our servers."
+    },
+    "select-provider": "Select Provider",
+    "api-key": "API Key",
+    "api-key-placeholder": "Enter your API key",
+    "get-api-key-from": "Get API key from",
+    "base-url": "Base URL (Optional)",
+    "base-url-placeholder": "Custom base URL",
+    "enabled": "Enabled",
+    "fetch-models": "Fetch Available Models",
+    "available-models": "Available Models",
+    "api-key-required": "API key is required",
+    "fetching-models": "Fetching models...",
+    "fetch-failed": "Failed to fetch models"
+  },
+
+  "chat": {
+    "placeholder": "Ask me anything about your resume...",
+    "select-model": "Select AI Model",
+    "no-model-selected": "Please select a model",
+    "search-models": "Search models...",
+    "start-conversation": "Start a conversation",
+    "empty-title": "Start a conversation",
+    "empty-description": "Ask me anything about your resume, get optimization tips, or practice interviews.",
+    "retry": "Retry",
+    "copy": "Copy",
+    "abort": "Abort",
+    "updating-resume": "Updating resume...",
+    "thinking": "Thinking...",
+    "restore-history": "Restore history",
+    "history-restored": "Chat history restored",
+    "history-empty": "No chat history found",
+    "history-open": "History",
+    "history-title": "Chat history",
+    "history-description": "Select a conversation to restore.",
+    "history-current": "Current",
+    "history-new": "New chat",
+    "history-restore": "Restore",
+    "history-rename": "Rename",
+    "history-delete": "Delete",
+    "history-rename-title": "Rename chat",
+    "history-rename-description": "Update the conversation title.",
+    "history-rename-placeholder": "Enter chat title",
+    "history-title-required": "Title is required",
+    "history-deleted": "Chat deleted",
+    "history-renamed": "Chat renamed",
+    "history-messages": "{count} messages"
+  },
+  "snapshot": {
+    "title": "Snapshots",
+    "restore-before": "Restore before",
+    "restore-after": "Restore after",
+    "tip": "Only AI-applied changes are tracked here. User input history is not included. Up to 20 snapshots are stored locally."
+  }
+}

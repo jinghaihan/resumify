@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# debug
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# drizzle
+_journal.json
+*_snapshot.json
+*.sql
+
+# public
+public/chromium-pack.tar
+public/fonts

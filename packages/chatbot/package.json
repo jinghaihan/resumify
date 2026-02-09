@@ -1,0 +1,10 @@
+{
+  "name": "@resumify/chatbot",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "dexie": "catalog:utils"
+  }
+}

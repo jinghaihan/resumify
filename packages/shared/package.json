@@ -1,0 +1,24 @@
+{
+  "name": "@resumify/shared",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./constants": "./src/constants/index.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./schemas": "./src/schemas/index.ts",
+    "./types": "./src/types/index.ts",
+    "./utils": "./src/utils/index.ts"
+  },
+  "dependencies": {
+    "@resumify/ai": "workspace:*",
+    "clsx": "catalog:style",
+    "date-fns": "catalog:utils",
+    "nanoid": "catalog:utils",
+    "tailwind-merge": "catalog:style",
+    "usehooks-ts": "catalog:prod",
+    "zod": "catalog:utils"
+  },
+  "devDependencies": {
+    "streamdown": "catalog:markdown"
+  }
+}

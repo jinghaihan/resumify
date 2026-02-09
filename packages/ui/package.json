@@ -1,0 +1,19 @@
+{
+  "name": "@resumify/ui",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "catalog:frontend",
+    "@dnd-kit/sortable": "catalog:frontend",
+    "@dnd-kit/utilities": "catalog:frontend",
+    "@iconify/react": "catalog:icons",
+    "@resumify/api": "workspace:*",
+    "@resumify/shared": "workspace:*",
+    "class-variance-authority": "catalog:style",
+    "lucide-react": "catalog:icons",
+    "react-image-crop": "catalog:frontend",
+    "sonner": "catalog:frontend"
+  }
+}

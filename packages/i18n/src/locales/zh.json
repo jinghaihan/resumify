@@ -1,0 +1,433 @@
+{
+  "button": {
+    "submit": "提交",
+    "add": "添加",
+    "save": "保存",
+    "reset": "重置",
+    "confirm": "确定",
+    "cancel": "取消",
+    "select": "选择",
+    "delete": "删除",
+    "copy": "复制",
+    "download": "下载",
+    "edit": "编辑",
+    "stop": "停止",
+    "resume": "恢复",
+    "dark-toggle": "暗色模式",
+    "select-langauge": "选择语言",
+    "print": "导出 PDF"
+  },
+
+  "field": {
+    "label": "标签",
+    "value": "值",
+    "description": "描述",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "achievements": "主要成就"
+  },
+
+  "status": {
+    "empty": "暂无数据",
+    "loading": "加载中...",
+    "error": "发生错误"
+  },
+
+  "confirm": {
+    "reset": {
+      "title": "重置",
+      "description": "确定要重置此模块吗？"
+    },
+    "clear-resume": {
+      "title": "清空简历",
+      "description": "确定要清空所有简历数据吗？"
+    },
+    "snapshot-restore-before": {
+      "title": "恢复到优化前",
+      "description": "确认将简历恢复到此次优化之前的状态吗？"
+    },
+    "snapshot-restore-after": {
+      "title": "恢复到优化后",
+      "description": "确认将简历恢复到此次优化之后的状态吗？"
+    },
+    "snapshot-delete": {
+      "title": "删除快照",
+      "description": "确定删除该快照吗？此操作无法撤销。"
+    },
+    "chat-history-delete": {
+      "title": "删除对话",
+      "description": "确定删除该聊天记录吗？此操作无法撤销。"
+    }
+  },
+
+  "message": {
+    "copy-success": "已复制到剪贴板",
+    "save-success": "简历保存成功",
+    "save-failed": "简历保存失败",
+    "resume-update-success": "简历更新成功",
+    "resume-update-failed": "简历更新失败",
+    "resume-rollback-success": "简历已恢复",
+    "resume-rollback-failed": "简历恢复失败",
+    "snapshot-delete-success": "快照已删除",
+    "snapshot-delete-failed": "快照删除失败",
+    "export-success": "简历数据导出成功",
+    "export-failed": "导出失败，请检查您的数据",
+    "import-success": "简历数据导入成功",
+    "import-failed": "无效的 JSON 格式，请检查您的数据",
+    "pdf-exporting": "正在导出 PDF...",
+    "pdf-export-success": "PDF 导出成功",
+    "pdf-export-failed": "PDF 导出失败",
+    "upload-format-failed": "仅支持 JPEG、PNG 和 WebP 格式",
+    "upload-size-failed": "图片大小必须小于 5MB",
+    "crop-failed": "裁剪图片失败",
+    "share-create-success": "分享链接已创建并复制到剪贴板",
+    "share-create-failed": "创建分享链接失败",
+    "share-update-success": "分享链接更新成功",
+    "share-update-failed": "更新分享链接失败",
+    "resume-create-success": "简历创建成功",
+    "resume-create-failed": "简历创建失败",
+    "resume-rename-success": "简历重命名成功",
+    "resume-rename-failed": "简历重命名失败",
+    "resume-duplicate-success": "简历复制成功",
+    "resume-duplicate-failed": "简历复制失败",
+    "resume-delete-success": "简历删除成功",
+    "resume-delete-failed": "简历删除失败",
+    "resume-load-success": "简历加载成功",
+    "resume-load-failed": "简历加载失败"
+  },
+
+  "icon-picker": {
+    "title": "选择图标",
+    "description": "从 iconify 中搜索图标",
+    "placeholder": "搜索图标..."
+  },
+
+  "tag-input": {
+    "placeholder": "输入后按回车添加",
+    "max-length-reached": "已达到最大标签数量"
+  },
+
+  "photo-uploader": {
+    "title": "调整照片",
+    "description": "裁剪和调整您的照片大小",
+    "shape": {
+      "square": "方形 (1:1)",
+      "circle": "圆形 (1:1)",
+      "inch1": "一寸照片 (25×35mm)",
+      "inch2": "二寸照片 (35×53mm)"
+    }
+  },
+
+  "navigation": {
+    "personal-info": "个人信息",
+    "skill": "技能",
+    "work-experience": "工作经历",
+    "project-experience": "项目经历",
+    "section": "自定义块",
+    "settings": "导出设置",
+    "theme": "主题",
+    "model-provider": "模型提供商",
+    "chat": "聊天",
+    "resumes": "我的简历",
+    "shares": "分享链接"
+  },
+
+  "personal-info": {
+    "title": "个人信息",
+    "subtitle": "编辑您的个人详细信息",
+    "name": "姓名",
+    "job-objective": "求职意向",
+    "photo": "照片",
+    "location": "所属地",
+    "age": "年龄",
+    "phone": "手机号",
+    "email": "邮箱",
+    "school": "学校",
+    "major": "专业"
+  },
+
+  "social-links": {
+    "title": "社交链接",
+    "subtitle": "编辑您的社交链接"
+  },
+
+  "skills": {
+    "title": "专业技能",
+    "subtitle": "添加您的专业技能和特长",
+    "placeholder": "输入您的专业技能或特长"
+  },
+
+  "work-experience": {
+    "title": "工作经历",
+    "subtitle": "添加您的工作经历和成就",
+    "name": "公司/组织",
+    "role": "职位/角色"
+  },
+
+  "project-experience": {
+    "title": "项目经历",
+    "subtitle": "展示您的个人或专业项目",
+    "name": "项目名称",
+    "role": "角色/职位",
+    "techStack": "技术栈"
+  },
+
+  "custom-section": {
+    "title": "自定义块",
+    "subtitle": "添加自定义内容块，支持 Markdown 语法。使用 Markdown 标题来定义章节标题。",
+    "placeholder": "输入您的自定义块"
+  },
+
+  "settings": {
+    "title": "导出设置",
+    "subtitle": "配置 PDF 导出选项，包括纸张尺寸、页边距和格式设置。",
+    "reset-to-defaults": "恢复默认值",
+    "page-format": {
+      "title": "页面格式",
+      "description": "配置纸张大小和方向",
+      "paper-size": "纸张大小",
+      "landscape": "横向打印",
+      "landscape-description": "使用横向模式打印",
+      "prefer-css-page-size": "优先使用 CSS 页面尺寸",
+      "prefer-css-page-size-description": "使用 CSS 中的 @page 尺寸"
+    },
+    "margins": {
+      "title": "页边距",
+      "description": "配置页面边距（单位：英寸）",
+      "top": "上边距",
+      "bottom": "下边距",
+      "left": "左边距",
+      "right": "右边距"
+    },
+    "scale-and-pages": {
+      "title": "缩放和页码",
+      "description": "配置渲染比例和页面选择",
+      "scale": "缩放比例",
+      "range": "范围",
+      "page-ranges": "页码范围",
+      "start-page": "起始页",
+      "end-page": "结束页",
+      "leave-empty-tip": "留空则打印所有页面"
+    },
+    "display-options": {
+      "title": "显示选项",
+      "description": "配置 PDF 中包含的内容",
+      "print-background": "打印背景",
+      "print-background-description": "包含背景图形",
+      "omit-background": "省略背景",
+      "omit-background-description": "生成透明 PDF",
+      "display-header-footer": "显示页眉/页脚",
+      "display-header-footer-description": "显示页眉和页脚区域"
+    },
+    "accessibility": {
+      "title": "无障碍设置（实验性）",
+      "description": "启用实验性 PDF 功能",
+      "tagged": "标签 PDF",
+      "tagged-description": "生成带标签的无障碍 PDF",
+      "outline": "文档大纲",
+      "outline-description": "生成文档大纲/书签"
+    }
+  },
+
+  "export": {
+    "title": "导出简历数据",
+    "description": "编辑并导出简历 JSON 数据",
+    "download": "下载",
+    "update": "更新简历",
+    "content": "JSON 内容",
+    "placeholder": "简历 JSON 内容"
+  },
+
+  "import": {
+    "title": "导入简历数据",
+    "description": "上传 JSON 文件或粘贴 JSON 内容",
+    "import": "导入",
+    "upload": "上传文件"
+  },
+
+  "zoom": {
+    "zoom-in": "放大",
+    "zoom-out": "缩小",
+    "reset-zoom": "重置缩放",
+    "hold-space-drag": "按住空格拖拽"
+  },
+
+  "theme": {
+    "title": "简历模板",
+    "subtitle": "为您的简历内容选择样式主题",
+    "select-preset": "选择预设",
+    "layout-mode": "布局模式",
+    "personal-info-layout": "个人信息布局",
+    "experience-header-layout": "经历标题布局",
+    "tech-stack-style": "技术栈样式",
+    "typography": "排版样式",
+    "single": "单栏",
+    "double": "双栏",
+    "reversed-double": "反转双栏",
+    "stacked": "堆叠",
+    "inline": "行内",
+    "opposite-ends": "两端对齐",
+    "colored": "彩色",
+    "muted": "柔和",
+    "outline": "轮廓",
+    "rounded": "圆角",
+    "square": "方形",
+    "github": "GitHub"
+  },
+
+  "resume-list": {
+    "title": "我的简历",
+    "subtitle": "管理和切换您的简历",
+    "current": "当前",
+    "resume-name": "简历名称",
+    "load": "加载",
+    "rename": "重命名",
+    "duplicate": "复制",
+    "create-modal": {
+      "title": "创建简历",
+      "description": "为此简历输入名称"
+    },
+    "rename-modal": {
+      "title": "重命名简历",
+      "description": "为此简历输入新名称"
+    },
+    "duplicate-modal": {
+      "title": "复制简历",
+      "description": "为复制的简历输入名称"
+    },
+    "delete-confirm": {
+      "title": "删除简历",
+      "description": "确定要删除这份简历吗？"
+    }
+  },
+
+  "share-list": {
+    "title": "分享链接",
+    "subtitle": "管理分享简历的链接",
+    "original-resume": "基于简历",
+    "view-count": "次浏览",
+    "qr-code": "二维码",
+    "delete-confirm": {
+      "title": "删除分享链接",
+      "description": "确定要删除这个分享链接吗？"
+    },
+    "status": {
+      "one-time": "一次性",
+      "stopped": "已停用",
+      "active": "已启用",
+      "expired": "已过期"
+    }
+  },
+
+  "share-button": {
+    "title": "分享",
+    "create-link": "新增链接",
+    "view-links": "查看链接",
+    "data-link": "携带数据链接",
+    "data-link-confirm": {
+      "title": "生成数据链接",
+      "description": "这将创建一个包含简历数据的永久链接，任何拥有此链接的人都可以查看您的简历。是否继续？"
+    }
+  },
+
+  "create-share": {
+    "title": "创建分享链接",
+    "description": "为您的简历创建可分享的链接",
+    "share-name": "分享名称",
+    "share-name-placeholder": "我的简历分享",
+    "one-time": "一次性链接",
+    "expires-at": "过期时间",
+    "never": "永不过期",
+    "1h": "1 小时",
+    "24h": "24 小时",
+    "7d": "7 天",
+    "30d": "30 天",
+    "custom": "自定义日期",
+    "select-date": "选择日期",
+    "password": "密码（可选）",
+    "password-placeholder": "输入密码",
+    "password-hint": "留空则不设置密码保护",
+    "name-required-failed": "请输入分享名称",
+    "date-required-failed": "请选择日期",
+    "invalid-date-failed": "请选择有效日期"
+  },
+
+  "configure-share": {
+    "title": "配置分享链接",
+    "description": "更新分享链接设置"
+  },
+
+  "share-access": {
+    "share-not-found": "未找到分享",
+    "share-not-found-description": "此分享链接不存在或已被删除。",
+    "share-no-longer-accessible": "分享无法访问",
+    "share-stopped-by-owner": "此分享已被所有者停止。",
+    "share-expired": "此分享已过期。",
+    "one-time-share-consumed": "此一次性分享链接已被使用，无法再次访问。",
+    "password-required": "需要口令",
+    "password-required-description": "此分享链接设置了口令保护",
+    "enter-password": "输入口令",
+    "invalid-password": "口令错误",
+    "verify-error": "验证失败"
+  },
+
+  "model-provider": {
+    "title": "模型提供商",
+    "subtitle": "配置 AI 模型提供商以使用 AI 功能",
+    "privacy-notice": {
+      "title": "隐私声明",
+      "description": "您的 API 密钥仅存储在本地浏览器中，绝不会发送到我们的服务器。"
+    },
+    "select-provider": "选择提供商",
+    "api-key": "API 密钥",
+    "api-key-placeholder": "请输入您的 API 密钥",
+    "get-api-key-from": "获取 API 密钥",
+    "base-url": "Base URL（可选）",
+    "base-url-placeholder": "自定义 Base URL",
+    "enabled": "已启用",
+    "fetch-models": "获取可用模型",
+    "available-models": "可用模型",
+    "api-key-required": "请输入 API 密钥",
+    "fetching-models": "正在获取模型...",
+    "fetch-failed": "获取模型失败"
+  },
+
+  "chat": {
+    "placeholder": "问我任何关于简历的问题...",
+    "select-model": "选择 AI 模型",
+    "no-model-selected": "请选择一个模型",
+    "search-models": "搜索模型...",
+    "start-conversation": "开始对话",
+    "empty-title": "开始对话",
+    "empty-description": "问我任何关于简历的问题，获取优化建议，或练习面试。",
+    "retry": "重试",
+    "copy": "复制",
+    "abort": "终止",
+    "updating-resume": "正在更新简历...",
+    "thinking": "思考中...",
+    "restore-history": "恢复聊天记录",
+    "history-restored": "聊天记录已恢复",
+    "history-empty": "暂无聊天记录",
+    "history-open": "历史记录",
+    "history-title": "聊天记录",
+    "history-description": "选择对话以恢复。",
+    "history-current": "当前",
+    "history-new": "新对话",
+    "history-restore": "恢复",
+    "history-rename": "重命名",
+    "history-delete": "删除",
+    "history-rename-title": "重命名对话",
+    "history-rename-description": "更新对话标题。",
+    "history-rename-placeholder": "输入对话标题",
+    "history-title-required": "标题不能为空",
+    "history-deleted": "对话已删除",
+    "history-renamed": "对话已重命名",
+    "history-messages": "{count} 条消息"
+  },
+  "snapshot": {
+    "title": "快照",
+    "restore-before": "恢复到优化前",
+    "restore-after": "恢复到优化后",
+    "tip": "仅记录 AI 应用的修改，不包含用户输入历史。最多在本地保存 20 条快照。"
+  }
+}

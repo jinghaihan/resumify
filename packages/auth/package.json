@@ -1,0 +1,17 @@
+{
+  "name": "@resumify/auth",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts",
+    "./provider": "./src/provider.tsx",
+    "./locales/zh": "./src/locales/zh.ts"
+  },
+  "dependencies": {
+    "@better-auth/ui": "catalog:auth",
+    "@resumify/database": "workspace:*",
+    "@resumify/i18n": "workspace:*",
+    "better-auth": "catalog:auth"
+  }
+}

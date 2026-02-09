@@ -1,0 +1,12 @@
+{
+  "name": "@resumify/api",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@resumify/database": "workspace:*",
+    "@resumify/shared": "workspace:*",
+    "ofetch": "catalog:network"
+  }
+}

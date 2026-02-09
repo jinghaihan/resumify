@@ -1,0 +1,24 @@
+{
+  "name": "@resumify/store",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./app/*": "./src/modules/app/*.ts",
+    "./export/*": "./src/modules/export/*.ts",
+    "./personal-info/*": "./src/modules/personal-info/*.ts",
+    "./project-experience/*": "./src/modules/project-experience/*.ts",
+    "./resume/*": "./src/modules/resume/*.ts",
+    "./section/*": "./src/modules/section/*.ts",
+    "./share/*": "./src/modules/share/*.ts",
+    "./skill/*": "./src/modules/skill/*.ts",
+    "./work-experience/*": "./src/modules/work-experience/*.ts",
+    "./zoom-pan/*": "./src/modules/zoom-pan/*.ts"
+  },
+  "dependencies": {
+    "@resumify/api": "workspace:*",
+    "@resumify/database": "workspace:*",
+    "@resumify/shared": "workspace:*",
+    "nanoid": "catalog:utils",
+    "zustand": "catalog:frontend"
+  }
+}

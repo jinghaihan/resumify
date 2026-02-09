@@ -1,0 +1,13 @@
+html,
+body {
+  overflow: hidden;
+}
+
+.mobile-paper {
+  padding: 0 !important;
+
+  & > div {
+    width: 100% !important;
+    margin-block: 0 !important;
+  }
+}

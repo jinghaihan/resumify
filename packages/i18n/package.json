@@ -1,0 +1,10 @@
+{
+  "name": "@resumify/i18n",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "next-intl": "catalog:i18n"
+  }
+}

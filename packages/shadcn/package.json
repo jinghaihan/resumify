@@ -1,0 +1,34 @@
+{
+  "name": "@resumify/shadcn",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "add": "shadcn add",
+    "add:ai": "pnpx ai-elements@latest add"
+  },
+  "dependencies": {
+    "@radix-ui/react-use-controllable-state": "catalog:frontend",
+    "@resumify/shared": "workspace:*",
+    "@streamdown/cjk": "catalog:markdown",
+    "@streamdown/code": "catalog:markdown",
+    "@streamdown/math": "catalog:markdown",
+    "@streamdown/mermaid": "catalog:markdown",
+    "ai": "catalog:ai",
+    "class-variance-authority": "catalog:style",
+    "cmdk": "catalog:frontend",
+    "date-fns": "catalog:utils",
+    "lucide-react": "catalog:icons",
+    "motion": "catalog:frontend",
+    "nanoid": "catalog:utils",
+    "next-themes": "catalog:next",
+    "radix-ui": "catalog:frontend",
+    "react-day-picker": "catalog:frontend",
+    "react-resizable-panels": "catalog:frontend",
+    "sonner": "catalog:frontend",
+    "streamdown": "catalog:markdown",
+    "use-stick-to-bottom": "catalog:prod",
+    "vaul": "catalog:prod"
+  }
+}

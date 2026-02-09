@@ -1,0 +1,93 @@
+{
+  "name": "resumify",
+  "type": "module",
+  "version": "0.0.0.alpha.0",
+  "description": "Block-based resume builder with AI and PDF export.",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/resumify#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/resumify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/resumify/issues"
+  },
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "deps": "taze major -I",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "ui": "pnpm -F @resumify/shadcn add",
+    "ui:ai": "pnpm -F @resumify/shadcn add:ai",
+    "db:generate": "pnpm -F @resumify/database generate",
+    "db:migrate": "pnpm -F @resumify/database migrate",
+    "db:studio": "pnpm -F @resumify/database studio",
+    "release": "bumpp",
+    "prepare": "simple-git-hooks",
+    "postinstall": "tsx ./scripts/postinstall.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "catalog:frontend",
+    "@better-auth/ui": "catalog:auth",
+    "@iconify/react": "catalog:icons",
+    "@resumify/ai": "workspace:*",
+    "@resumify/api": "workspace:*",
+    "@resumify/auth": "workspace:*",
+    "@resumify/chatbot": "workspace:*",
+    "@resumify/database": "workspace:*",
+    "@resumify/i18n": "workspace:*",
+    "@resumify/shadcn": "workspace:*",
+    "@resumify/shared": "workspace:*",
+    "@resumify/store": "workspace:*",
+    "@resumify/themes": "workspace:*",
+    "@resumify/ui": "workspace:*",
+    "@sparticuz/chromium-min": "catalog:export",
+    "ai": "catalog:ai",
+    "date-fns": "catalog:utils",
+    "lucide-react": "catalog:icons",
+    "lz-string": "catalog:utils",
+    "nanoid": "catalog:utils",
+    "next": "catalog:next",
+    "next-intl": "catalog:i18n",
+    "next-themes": "catalog:next",
+    "puppeteer-core": "catalog:export",
+    "qrcode.react": "catalog:frontend",
+    "react": "catalog:frontend",
+    "react-dom": "catalog:frontend",
+    "sonner": "catalog:frontend",
+    "tw-animate-css": "catalog:style"
+  },
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "catalog:lint",
+    "@sparticuz/chromium": "catalog:export",
+    "@tailwindcss/postcss": "catalog:style",
+    "@types/node": "catalog:types",
+    "@types/react": "catalog:types",
+    "@types/react-dom": "catalog:types",
+    "autoprefixer": "catalog:style",
+    "bumpp": "catalog:cli",
+    "eslint": "catalog:lint",
+    "eslint-config-hyoban": "catalog:lint",
+    "eslint-config-next": "catalog:lint",
+    "eslint-plugin-format": "catalog:lint",
+    "lint-staged": "catalog:lint",
+    "pncat": "catalog:cli",
+    "shadcn": "catalog:node",
+    "simple-git-hooks": "catalog:lint",
+    "tailwindcss": "catalog:style",
+    "taze": "catalog:cli",
+    "tsx": "catalog:script",
+    "typescript": "catalog:tsc",
+    "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
