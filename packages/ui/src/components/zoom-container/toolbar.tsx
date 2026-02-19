@@ -29,7 +29,7 @@ export function ZoomContainerToolbar({
     <div
       className={cn(
         `
-          flex items-center gap-1 rounded-full border border-border bg-card px-2
+          flex items-center rounded-full border border-border bg-card px-2
           py-1.5 text-muted-foreground shadow-lg
         `,
         className,

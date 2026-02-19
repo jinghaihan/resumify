@@ -15,3 +15,7 @@ Block-based resume builder with AI and PDF export.
 - Markdown support: rich text formatting in supported content fields.
 - PDF export: produce printable resumes from the same source data.
 - Multi-language architecture: built with i18n-ready app structure.
+
+## License
+
+[MIT](./LICENSE) License © [jinghaihan](https://github.com/jinghaihan)

@@ -1,7 +1,7 @@
 'use client'
 
 import type { ModelConfig, ModelProviderType } from '@resumify/ai'
-import type { WithEnabled } from '@resumify/shared'
+import type { ModelProviderConfig, WithEnabled } from '@resumify/shared'
 import { SUPPORTED_MODEL_PROVIDERS } from '@resumify/ai'
 import { Button } from '@shadcn/components/ui/button'
 import { Input } from '@shadcn/components/ui/input'
@@ -18,16 +18,9 @@ import { Loader2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
 
-interface ProviderConfig {
-  apiKey: string
-  baseURL: string
-  enabled: boolean
-  models: WithEnabled<ModelConfig>[]
-}
-
 interface ProviderConfigCardProps {
   provider: ModelProviderType
-  config: ProviderConfig
+  config: ModelProviderConfig
   onProviderChange: (provider: ModelProviderType) => void
   onApiKeyChange: (apiKey: string) => void
   onBaseUrlChange: (baseUrl: string) => void

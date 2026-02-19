@@ -1,7 +1,7 @@
 'use client'
 
 import type { ModelConfig, ModelProviderType } from '@resumify/ai'
-import type { WithEnabled } from '@resumify/shared'
+import type { ModelProviderConfig, WithEnabled } from '@resumify/shared'
 import { SUPPORTED_MODEL_PROVIDERS } from '@resumify/ai'
 import { useAIStore } from '@resumify/store'
 import { Alert, AlertDescription, AlertTitle } from '@shadcn/components/ui/alert'
@@ -11,14 +11,7 @@ import { useMemo, useState } from 'react'
 
 import { ProviderConfigCard } from './provider-config-card'
 
-interface ProviderConfig {
-  apiKey: string
-  baseURL: string
-  enabled: boolean
-  models: WithEnabled<ModelConfig>[]
-}
-
-function getDefaultConfig(providerId: ModelProviderType): ProviderConfig {
+function getDefaultConfig(providerId: ModelProviderType): ModelProviderConfig {
   const providerInfo = SUPPORTED_MODEL_PROVIDERS.find(p => p.id === providerId)
   return {
     apiKey: '',

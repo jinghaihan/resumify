@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@resumify/ai": "workspace:*",
-    "clsx": "catalog:style",
-    "date-fns": "catalog:utils",
-    "nanoid": "catalog:utils",
-    "tailwind-merge": "catalog:style",
+    "clsx": "catalog:frontend",
+    "date-fns": "catalog:prod",
+    "nanoid": "catalog:prod",
+    "tailwind-merge": "catalog:frontend",
     "usehooks-ts": "catalog:prod",
-    "zod": "catalog:utils"
+    "zod": "catalog:prod"
   },
   "devDependencies": {
-    "streamdown": "catalog:markdown"
+    "streamdown": "catalog:frontend"
   }
 }

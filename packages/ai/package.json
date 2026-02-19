@@ -11,7 +11,7 @@
     "@ai-sdk/openai": "catalog:ai",
     "@ai-sdk/zai": "catalog:ai",
     "ai": "catalog:ai",
-    "ofetch": "catalog:network",
-    "zod": "catalog:utils"
+    "ofetch": "catalog:prod",
+    "zod": "catalog:prod"
   }
 }

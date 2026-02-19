@@ -5,6 +5,6 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "dexie": "catalog:utils"
+    "dexie": "catalog:prod"
   }
 }

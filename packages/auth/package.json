@@ -9,9 +9,9 @@
     "./locales/zh": "./src/locales/zh.ts"
   },
   "dependencies": {
-    "@better-auth/ui": "catalog:auth",
+    "@better-auth/ui": "catalog:prod",
     "@resumify/database": "workspace:*",
     "@resumify/i18n": "workspace:*",
-    "better-auth": "catalog:auth"
+    "better-auth": "catalog:prod"
   }
 }

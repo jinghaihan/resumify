@@ -1,7 +1,6 @@
 import type { ExportSettings, Resume } from '@resumify/shared'
 import type { NextRequest } from 'next/server'
 import { Buffer } from 'node:buffer'
-import { requestInterceptor } from '@resumify/auth/server'
 import { sanitizeResume } from '@resumify/shared'
 import chromium from '@sparticuz/chromium-min'
 import LZString from 'lz-string'
@@ -20,7 +19,7 @@ export interface ExportPDFBody {
   locale: string
 }
 
-async function POSTHandler(userId: string, request: NextRequest) {
+async function POSTHandler(request: NextRequest) {
   let browser: Awaited<ReturnType<typeof puppeteer.launch>> | null = null
 
   try {
@@ -93,4 +92,4 @@ async function POSTHandler(userId: string, request: NextRequest) {
   }
 }
 
-export const POST = requestInterceptor(POSTHandler)
+export const POST = POSTHandler

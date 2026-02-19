@@ -7,10 +7,10 @@
   "dependencies": {
     "@iconify/react": "catalog:icons",
     "@resumify/shared": "workspace:*",
-    "@streamdown/cjk": "catalog:markdown",
-    "@streamdown/code": "catalog:markdown",
-    "@streamdown/math": "catalog:markdown",
-    "@streamdown/mermaid": "catalog:markdown",
-    "streamdown": "catalog:markdown"
+    "@streamdown/cjk": "catalog:frontend",
+    "@streamdown/code": "catalog:frontend",
+    "@streamdown/math": "catalog:frontend",
+    "@streamdown/mermaid": "catalog:frontend",
+    "streamdown": "catalog:frontend"
   }
 }

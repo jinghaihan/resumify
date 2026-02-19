@@ -18,7 +18,7 @@
     "@resumify/api": "workspace:*",
     "@resumify/database": "workspace:*",
     "@resumify/shared": "workspace:*",
-    "nanoid": "catalog:utils",
+    "nanoid": "catalog:prod",
     "zustand": "catalog:frontend"
   }
 }

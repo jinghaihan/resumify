@@ -72,6 +72,7 @@ export function Modal({
         await result
         setOpen(false)
       }
+      setOpen(false)
     }
     finally {
       setLoading(false)

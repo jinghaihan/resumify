@@ -17,17 +17,17 @@
     "studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@supabase/ssr": "catalog:database",
-    "@supabase/supabase-js": "catalog:database",
-    "bcrypt": "catalog:utils",
-    "drizzle-orm": "catalog:database",
-    "drizzle-zod": "catalog:utils",
-    "postgres": "catalog:database"
+    "@supabase/ssr": "catalog:prod",
+    "@supabase/supabase-js": "catalog:prod",
+    "bcrypt": "catalog:prod",
+    "drizzle-orm": "catalog:backend",
+    "drizzle-zod": "catalog:backend",
+    "postgres": "catalog:backend"
   },
   "devDependencies": {
-    "@better-auth/cli": "catalog:auth",
+    "@better-auth/cli": "catalog:dev",
     "@types/bcrypt": "catalog:types",
-    "drizzle-kit": "catalog:database",
-    "supabase": "catalog:database"
+    "drizzle-kit": "catalog:backend",
+    "supabase": "catalog:dev"
   }
 }

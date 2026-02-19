@@ -7,6 +7,6 @@
   "dependencies": {
     "@resumify/database": "workspace:*",
     "@resumify/shared": "workspace:*",
-    "ofetch": "catalog:network"
+    "ofetch": "catalog:prod"
   }
 }

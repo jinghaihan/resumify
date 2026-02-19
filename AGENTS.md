@@ -39,24 +39,29 @@ resumify/
 ## Coding Rules
 
 ### 1. Comments
+
 - **NO CHINESE COMMENTS** - English only
 - Write **only when necessary** (complex logic, non-obvious code, workarounds)
 - Skip redundant comments for self-explanatory code
 
 ### 2. Pre-Execution Workflow
+
 **Before completing any task, MUST run:**
+
 ```sh
 pnpm lint --fix
 pnpm typecheck
 ```
 
 ### 3. Internationalization (i18n)
+
 - **Always use `useTranslations()` WITHOUT parameters**
 - **Write full translation paths**, e.g., `t('theme.single')` instead of `t('single')`
 - Wrong: `const t = useTranslations('theme')` then `t('single')`
 - Correct: `const t = useTranslations()` then `t('theme.single')`
 
 ### 4. Code Style
+
 - Follow existing patterns in the codebase
 - No `any` types
 - Prefer functional components & hooks

@@ -11,7 +11,7 @@
     "@iconify/react": "catalog:icons",
     "@resumify/api": "workspace:*",
     "@resumify/shared": "workspace:*",
-    "class-variance-authority": "catalog:style",
+    "class-variance-authority": "catalog:frontend",
     "lucide-react": "catalog:icons",
     "react-image-crop": "catalog:frontend",
     "sonner": "catalog:frontend"
