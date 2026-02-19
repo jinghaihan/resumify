@@ -4,6 +4,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./client": "./src/client.ts",
+    "./view-paths": "./src/view-paths.ts",
     "./server": "./src/server.ts",
     "./provider": "./src/provider.tsx",
     "./locales/zh": "./src/locales/zh.ts"

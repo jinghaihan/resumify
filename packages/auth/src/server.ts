@@ -8,7 +8,6 @@ import { username } from 'better-auth/plugins'
 import { headers } from 'next/headers'
 import { NextResponse } from 'next/server'
 
-export { accountViewPaths, authViewPaths, organizationViewPaths } from '@better-auth/ui/server'
 export { toNextJsHandler } from 'better-auth/next-js'
 
 export const auth = betterAuth({

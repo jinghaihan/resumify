@@ -1,10 +1,11 @@
 import { AuthView } from '@resumify/auth'
-import { authViewPaths } from '@resumify/auth/server'
+import { authViewPaths } from '@resumify/auth/view-paths'
+import { routing } from '@resumify/i18n'
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return Object.values(authViewPaths).map(path => ({ path }))
+  return routing.locales.flatMap(locale => Object.values(authViewPaths).map(path => ({ locale, path })))
 }
 
 export default async function AuthPage({ params }: { params: Promise<{ path: string }> }) {

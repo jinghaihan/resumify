@@ -2,8 +2,7 @@
 
 import type { ReactNode } from 'react'
 import { AuthUIProvider } from '@better-auth/ui'
-import { useRouter } from '@resumify/i18n'
-import Link from 'next/link'
+import { Link, useRouter } from '@resumify/i18n'
 import { authClient } from './client'
 import { zh } from './locales/zh'
 
