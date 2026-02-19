@@ -36,7 +36,7 @@ export const TECH_STACK_SHAPES: TechStackStyle['shape'][] = [
   'square',
 ]
 
-export const TYPOGRAPHIES: Typography[] = ['github']
+export const TYPOGRAPHIES: Typography[] = ['github', 'compact']
 
 export const THEME_LABELS = {
   layout: {
@@ -62,5 +62,6 @@ export const THEME_LABELS = {
   },
   typography: {
     github: 'theme.github',
+    compact: 'theme.compact',
   },
 } as const

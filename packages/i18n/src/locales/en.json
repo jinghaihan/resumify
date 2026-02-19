@@ -272,7 +272,8 @@
     "outline": "Outline",
     "rounded": "Rounded",
     "square": "Square",
-    "github": "GitHub"
+    "github": "GitHub",
+    "compact": "Compact"
   },
 
   "resume-list": {

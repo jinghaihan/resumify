@@ -1,8 +1,14 @@
-import type { AtomicThemeConfig } from '@resumify/shared'
-import { ATOMIC_THEME_CONFIG } from '.'
+import type { AtomicThemeConfig, ResumePersonalInfo } from '@resumify/shared'
+import { ATOMIC_THEME_CONFIG, ATOMIC_THEME_SPACING } from '.'
 
 export function personalInfoRenderer(themeConfig: AtomicThemeConfig) {
-  return ATOMIC_THEME_CONFIG.personalInfo[themeConfig.personalInfoLayout]
+  const renderer = ATOMIC_THEME_CONFIG.personalInfo[themeConfig.personalInfoLayout]
+  const spacing = ATOMIC_THEME_SPACING.typography[themeConfig.typography]
+
+  return (personalInfo: ResumePersonalInfo) => renderer(personalInfo, {
+    section: spacing.personalInfoSection,
+    dividerPadding: spacing.personalInfoDividerPadding,
+  })
 }
 
 export function experienceHeaderRenderer(themeConfig: AtomicThemeConfig) {
@@ -15,4 +21,8 @@ export function techStackRenderer(themeConfig: AtomicThemeConfig) {
 
 export function typographyRenderer(themeConfig: AtomicThemeConfig) {
   return ATOMIC_THEME_CONFIG.typography[themeConfig.typography]
+}
+
+export function typographySpacingRenderer(themeConfig: AtomicThemeConfig) {
+  return ATOMIC_THEME_SPACING.typography[themeConfig.typography]
 }

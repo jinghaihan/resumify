@@ -5,9 +5,10 @@ import { math } from '@streamdown/math'
 import { mermaid } from '@streamdown/mermaid'
 import { Streamdown } from 'streamdown'
 
+import { compactMarkdownComponents } from './styles/compact'
 import { githubMarkdownComponents } from './styles/github'
 
-export type Typography = 'github'
+export type Typography = 'github' | 'compact'
 
 export type MarkdownProps = {
   /**
@@ -42,6 +43,7 @@ const DEFAULT_PLUGINS = {
 
 const TYPOGRAPHY_STYLES: Record<Typography, StreamdownProps['components']> = {
   github: githubMarkdownComponents,
+  compact: compactMarkdownComponents,
 }
 
 export function Markdown({ children, style = 'github', components, className, ...props }: MarkdownProps) {
@@ -60,4 +62,4 @@ export function Markdown({ children, style = 'github', components, className, ..
 }
 
 // Re-export style components for direct use if needed
-export { githubMarkdownComponents }
+export { compactMarkdownComponents, githubMarkdownComponents }

@@ -1,8 +1,10 @@
 import type { ResumePersonalInfo } from '@resumify/shared'
+import type { PersonalInfoSpacing } from './types'
 import { Icon } from '@iconify/react'
-import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 
+import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 import { Markdown } from '../../markdown'
+import { DEFAULT_PERSONAL_INFO_SPACING } from './types'
 
 interface PersonalInfoItem {
   icon: string
@@ -16,12 +18,25 @@ interface HeaderRendererProps {
   avatar?: string | null
   avatarShape?: string | null
   id?: string
+  spacing?: PersonalInfoSpacing
 }
 
-function HeaderRenderer({ name, jobObjective, avatar, avatarShape, id }: HeaderRendererProps) {
+function HeaderRenderer({
+  name,
+  jobObjective,
+  avatar,
+  avatarShape,
+  id,
+  spacing = DEFAULT_PERSONAL_INFO_SPACING,
+}: HeaderRendererProps) {
   if (avatar) {
     return (
-      <section id={id} className="mb-8 border-b border-border pb-8">
+      <section className={`
+        ${spacing.section}
+        border-b border-border
+        ${spacing.dividerPadding}
+      `} id={id}
+      >
         <div className="flex items-center gap-6">
           <div className="shrink-0">
             <img
@@ -48,7 +63,7 @@ function HeaderRenderer({ name, jobObjective, avatar, avatarShape, id }: HeaderR
   }
 
   return (
-    <section id={id} className="mb-8">
+    <section className={spacing.section} id={id}>
       <h1 className="mb-2 text-4xl font-semibold text-foreground">
         {name}
       </h1>
@@ -61,7 +76,10 @@ function HeaderRenderer({ name, jobObjective, avatar, avatarShape, id }: HeaderR
   )
 }
 
-export function PersonalInfoStacked(personalInfo: ResumePersonalInfo): React.ReactNode {
+export function PersonalInfoStacked(
+  personalInfo: ResumePersonalInfo,
+  spacing: PersonalInfoSpacing = DEFAULT_PERSONAL_INFO_SPACING,
+): React.ReactNode {
   const personalInfoItems: PersonalInfoItem[] = personalInfo.personalInfo
     .filter(field => field.value)
     .map(field => ({
@@ -87,12 +105,14 @@ export function PersonalInfoStacked(personalInfo: ResumePersonalInfo): React.Rea
         jobObjective={personalInfo.jobObjective}
         avatar={personalInfo.photoUrl}
         avatarShape={personalInfo.photoShape}
+        spacing={spacing}
       />
       {allItems.length > 0 && (
-        <section className="
-          mb-8 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm
+        <section className={`
+          ${spacing.section}
+          flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm
           text-muted-foreground
-        "
+        `}
         >
           {allItems.map((item, index) => (
             <div key={index} className="flex items-center gap-1.5">

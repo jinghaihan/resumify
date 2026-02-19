@@ -1,8 +1,10 @@
 import type { ResumePersonalInfo } from '@resumify/shared'
+import type { PersonalInfoSpacing } from './types'
 import { Icon } from '@iconify/react'
-import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 
+import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 import { Markdown } from '../../markdown'
+import { DEFAULT_PERSONAL_INFO_SPACING } from './types'
 
 interface PersonalInfoItem {
   icon: string
@@ -10,7 +12,10 @@ interface PersonalInfoItem {
   url: string | null
 }
 
-export function PersonalInfoInline(personalInfo: ResumePersonalInfo): React.ReactNode {
+export function PersonalInfoInline(
+  personalInfo: ResumePersonalInfo,
+  spacing: PersonalInfoSpacing = DEFAULT_PERSONAL_INFO_SPACING,
+): React.ReactNode {
   const personalInfoItems: PersonalInfoItem[] = personalInfo.personalInfo
     .filter(field => field.value)
     .map(field => ({
@@ -30,7 +35,11 @@ export function PersonalInfoInline(personalInfo: ResumePersonalInfo): React.Reac
   const allItems = [...personalInfoItems, ...socialLinkItems]
 
   return (
-    <section className="mb-8 flex items-start gap-6">
+    <section className={`
+      ${spacing.section}
+      flex items-start gap-6
+    `}
+    >
       <div className="flex shrink-0 items-center gap-4">
         {personalInfo.photoUrl && (
           <div className="shrink-0">

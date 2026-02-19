@@ -33,7 +33,7 @@ export interface TechStackStyle {
   shape: 'rounded' | 'square'
 }
 
-export type Typography = 'github'
+export type Typography = 'github' | 'compact'
 
 export interface AtomicThemeConfig {
   layout: LayoutMode

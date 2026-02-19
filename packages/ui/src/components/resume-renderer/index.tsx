@@ -21,6 +21,7 @@ import {
   techStackRenderer,
   THEME_PRESETS,
   typographyRenderer,
+  typographySpacingRenderer,
 } from '@resumify/themes'
 import { useTranslations } from 'next-intl'
 
@@ -46,6 +47,7 @@ export function ResumeRenderer({
   const t = useTranslations()
 
   const {
+    themeConfig,
     renderers,
     customSections,
     distribution,
@@ -56,11 +58,12 @@ export function ResumeRenderer({
     TechStackRenderer,
     MarkdownRenderer,
   } = renderers
+  const spacing = typographySpacingRenderer(themeConfig)
 
   const sectionsRenderers = {
     personalInfoRenderer: PersonalInfoRenderer,
     skillsRenderer: (skills: Skill[]) => (
-      <section className="mb-8">
+      <section className={spacing.section}>
         <MarkdownRenderer>{`## ${t('skills.title')}`}</MarkdownRenderer>
         <MarkdownRenderer>
           {skills.map(s => `- ${s.content}`).join('\n')}
@@ -68,7 +71,7 @@ export function ResumeRenderer({
       </section>
     ),
     workExperiencesRenderer: (experiences: WorkExperience[]) => (
-      <section className="mb-8">
+      <section className={spacing.section}>
         <MarkdownRenderer>{`## ${t('work-experience.title')}`}</MarkdownRenderer>
         {experiences.map((exp, index) => (
           <div key={exp.id}>
@@ -79,7 +82,11 @@ export function ResumeRenderer({
               endDate={exp.endDate}
             />
             {(exp.description || exp.achievements) && (
-              <div className="mt-2 text-sm text-muted-foreground">
+              <div className={`
+                ${spacing.content}
+                text-sm text-muted-foreground
+              `}
+              >
                 {exp.description && <MarkdownRenderer>{exp.description}</MarkdownRenderer>}
                 {exp.achievements && (
                   <>
@@ -95,7 +102,7 @@ export function ResumeRenderer({
       </section>
     ),
     projectExperiencesRenderer: (projects: ProjectExperience[]) => (
-      <section className="mb-8">
+      <section className={spacing.section}>
         <MarkdownRenderer>{`## ${t('project-experience.title')}`}</MarkdownRenderer>
         {projects.map((proj, index) => (
           <div key={proj.id}>
@@ -106,12 +113,16 @@ export function ResumeRenderer({
               endDate={proj.endDate}
             />
             {proj.techStack && proj.techStack.length > 0 && (
-              <div className="mt-2">
+              <div className={spacing.content}>
                 <TechStackRenderer techs={proj.techStack} />
               </div>
             )}
             {(proj.description || proj.achievements) && (
-              <div className="mt-2 text-sm text-muted-foreground">
+              <div className={`
+                ${spacing.content}
+                text-sm text-muted-foreground
+              `}
+              >
                 {proj.description && <MarkdownRenderer>{proj.description}</MarkdownRenderer>}
                 {proj.achievements && (
                   <>
@@ -127,7 +138,9 @@ export function ResumeRenderer({
       </section>
     ),
     customSectionRenderer: (section: Section) => (
-      <MarkdownRenderer>{section.content}</MarkdownRenderer>
+      <section className={spacing.section}>
+        <MarkdownRenderer>{section.content}</MarkdownRenderer>
+      </section>
     ),
   }
 
