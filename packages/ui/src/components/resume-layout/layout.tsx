@@ -142,7 +142,7 @@ export function ResumeLayout({
         {columnIds.map(columnId => (
           renderColumnContent(
             columnId,
-            <div key={columnId} className="flex flex-col gap-4">
+            <div key={columnId}>
               {columns[columnId].map(sectionId => (
                 <div key={sectionId}>{renderSection(sectionId)}</div>
               ))}

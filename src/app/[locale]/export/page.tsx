@@ -34,6 +34,6 @@ export default async function ExportPage({ searchParams }: ExportPageProps) {
   }
 
   return (
-    <ResumeRenderer resume={resume} />
+    <ResumeRenderer className="light" resume={resume} />
   )
 }

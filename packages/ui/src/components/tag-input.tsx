@@ -188,6 +188,21 @@ export function TagInput({ ref, value = [], onChange, placeholder, disabled = fa
 
   return (
     <div className="flex flex-col gap-2">
+      <Input
+        id="tag-input"
+        value={inputValue}
+        onChange={e => setInputValue(e.target.value)}
+        onKeyDown={handleKeyDown}
+        onBlur={handleBlur}
+        placeholder={placeholder || t('tag-input.placeholder')}
+        disabled={disabled || (maxLength !== undefined && value.length >= maxLength)}
+      />
+      {maxLength !== undefined && value.length >= maxLength && (
+        <p className="text-xs text-muted-foreground">
+          {t('tag-input.max-length-reached')}
+        </p>
+      )}
+
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}
@@ -219,21 +234,6 @@ export function TagInput({ ref, value = [], onChange, placeholder, disabled = fa
           )}
         </DragOverlay>
       </DndContext>
-
-      <Input
-        id="tag-input"
-        value={inputValue}
-        onChange={e => setInputValue(e.target.value)}
-        onKeyDown={handleKeyDown}
-        onBlur={handleBlur}
-        placeholder={placeholder || t('tag-input.placeholder')}
-        disabled={disabled || (maxLength !== undefined && value.length >= maxLength)}
-      />
-      {maxLength !== undefined && value.length >= maxLength && (
-        <p className="text-xs text-muted-foreground">
-          {t('tag-input.max-length-reached')}
-        </p>
-      )}
     </div>
   )
 }
