@@ -1,7 +1,6 @@
 import type { AtomicThemeConfig } from '@resumify/shared'
 import { DEFAULT_RESUME_THEME } from '@resumify/shared'
 import { THEME_PRESETS } from '@resumify/themes'
-
 import { useResumeStore } from './store'
 
 export function resumeConfigured() {

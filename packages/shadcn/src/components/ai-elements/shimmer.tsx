@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@resumify/shared/utils";
 import { motion } from "motion/react";
 import {

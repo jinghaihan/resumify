@@ -1,8 +1,6 @@
 "use client"
-
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
-
 import { cn } from "@resumify/shared/utils"
 import { Button } from "@shadcn/components/ui/button"
 import { Input } from "@shadcn/components/ui/input"

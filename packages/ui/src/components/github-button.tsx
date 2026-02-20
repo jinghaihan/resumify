@@ -1,6 +1,5 @@
 import { APPLICATION_HOMEPAGE } from '@resumify/shared'
 import { GithubIcon } from 'lucide-react'
-
 import { IconButton } from './icon-button'
 
 export function GitHubButton() {

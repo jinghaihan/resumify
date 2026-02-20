@@ -1,8 +1,8 @@
 'use client'
+
 import { skills as skillsGetter, useSkillStore } from '@resumify/store'
 import { AddButton, Header, ResetButton, SortableList } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { SkillSection } from './section'
 
 export function SkillPanel() {

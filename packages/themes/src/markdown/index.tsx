@@ -4,7 +4,6 @@ import { code } from '@streamdown/code'
 import { math } from '@streamdown/math'
 import { mermaid } from '@streamdown/mermaid'
 import { Streamdown } from 'streamdown'
-
 import { compactMarkdownComponents } from './styles/compact'
 import { githubMarkdownComponents } from './styles/github'
 

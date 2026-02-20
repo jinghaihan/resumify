@@ -1,4 +1,5 @@
 'use client'
+
 import type { Skill } from '@resumify/shared'
 import type { SortableCardProps } from '@resumify/ui'
 import { SortableCard } from '@resumify/ui'

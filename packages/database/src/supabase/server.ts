@@ -1,5 +1,4 @@
 import process from 'node:process'
-
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 

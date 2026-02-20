@@ -1,4 +1,5 @@
 'use client'
+
 import type { ReactNode } from 'react'
 import { cn } from '@resumify/shared'
 import { CircleCheckIcon } from 'lucide-react'
@@ -30,7 +31,7 @@ export function SelectCard({ children, selected, onClick, showCheck }: SelectCar
     >
       {showCheck && selected && (
         <div className="absolute top-2 right-2 text-primary">
-          <CircleCheckIcon className="h-5 w-5" />
+          <CircleCheckIcon className="size-5" />
         </div>
       )}
       {children}

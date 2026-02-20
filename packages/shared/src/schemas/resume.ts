@@ -1,5 +1,4 @@
 import { z } from 'zod'
-
 import { personalInfoSchema } from './personal-info'
 import { projectExperienceSchema } from './project-experience'
 import { sectionSchema } from './section'

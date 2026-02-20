@@ -1,8 +1,8 @@
 'use client'
+
 import { useWorkExperienceStore, workExperiences as workExperiencesGetter } from '@resumify/store'
 import { AddButton, Header, ResetButton, SortableList } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { WorkExperienceSection } from './section'
 
 export function WorkExperiencePanel() {

@@ -16,7 +16,6 @@ import {
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { cn } from '@resumify/shared'
 import { useState } from 'react'
-
 import { Result } from '../result'
 import { SortableItem } from './item'
 

@@ -9,26 +9,26 @@
     "add:ai": "pnpx ai-elements@latest add"
   },
   "dependencies": {
+    "ai": "catalog:ai",
     "@radix-ui/react-use-controllable-state": "catalog:frontend",
-    "@resumify/shared": "workspace:*",
     "@streamdown/cjk": "catalog:frontend",
     "@streamdown/code": "catalog:frontend",
     "@streamdown/math": "catalog:frontend",
     "@streamdown/mermaid": "catalog:frontend",
-    "ai": "catalog:ai",
     "class-variance-authority": "catalog:frontend",
     "cmdk": "catalog:frontend",
-    "date-fns": "catalog:prod",
-    "lucide-react": "catalog:icons",
     "motion": "catalog:frontend",
-    "nanoid": "catalog:prod",
-    "next-themes": "catalog:prod",
     "radix-ui": "catalog:frontend",
     "react-day-picker": "catalog:frontend",
     "react-resizable-panels": "catalog:frontend",
     "sonner": "catalog:frontend",
     "streamdown": "catalog:frontend",
     "use-stick-to-bottom": "catalog:frontend",
-    "vaul": "catalog:frontend"
+    "vaul": "catalog:frontend",
+    "lucide-react": "catalog:icons",
+    "date-fns": "catalog:prod",
+    "nanoid": "catalog:prod",
+    "next-themes": "catalog:prod",
+    "@resumify/shared": "workspace:*"
   }
 }

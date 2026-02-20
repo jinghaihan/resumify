@@ -1,4 +1,5 @@
 'use client'
+
 import {
   resumeTheme as resumeThemeGetter,
   themeConfig as themeConfigGetter,
@@ -8,7 +9,6 @@ import { THEME_PRESETS } from '@resumify/themes'
 import { Header } from '@resumify/ui'
 import { Separator } from '@shadcn/components/ui/separator'
 import { useTranslations } from 'next-intl'
-
 import { ExperienceHeaderSection } from './experience-header-section'
 import { LayoutSection } from './layout-section'
 import { PersonalInfoSection } from './personal-info-section'

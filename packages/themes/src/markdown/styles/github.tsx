@@ -43,7 +43,7 @@ export const githubMarkdownComponents: StreamdownProps['components'] = {
 
   // Paragraph
   p: ({ children }) => (
-    <p className="mt-0 mb-4 text-sm leading-relaxed text-muted-foreground">
+    <p className="mt-0 mb-4 text-sm/relaxed text-muted-foreground">
       {children}
     </p>
   ),
@@ -90,7 +90,7 @@ export const githubMarkdownComponents: StreamdownProps['components'] = {
   ),
 
   li: ({ children }) => (
-    <li className="mt-2 text-sm leading-relaxed text-muted-foreground">
+    <li className="mt-2 text-sm/relaxed text-muted-foreground">
       {children}
     </li>
   ),
@@ -109,7 +109,7 @@ export const githubMarkdownComponents: StreamdownProps['components'] = {
   pre: ({ children }) => (
     <pre className="
       mt-0 mb-4 overflow-x-auto rounded-md border border-border bg-muted p-4
-      font-mono text-xs leading-relaxed text-foreground
+      font-mono text-xs/relaxed text-foreground
     "
     >
       {children}

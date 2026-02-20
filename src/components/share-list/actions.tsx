@@ -15,7 +15,6 @@ import {
 import { useTranslations } from 'next-intl'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { toast } from 'sonner'
-
 import { QRCodeModal } from './qr-code-modal'
 import { ShareFormModal } from './share-form-modal'
 

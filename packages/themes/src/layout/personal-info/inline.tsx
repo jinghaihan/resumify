@@ -1,7 +1,6 @@
 import type { ResumePersonalInfo } from '@resumify/shared'
 import type { PersonalInfoSpacing } from './types'
 import { Icon } from '@iconify/react'
-
 import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 import { Markdown } from '../../markdown'
 import { DEFAULT_PERSONAL_INFO_SPACING } from './types'

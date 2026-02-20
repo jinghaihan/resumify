@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 import { Button } from '@shadcn/components/ui/button'
 import { Loader2Icon } from 'lucide-react'
-
 import { Tooltip } from './tooltip'
 
 type IconButtonProps = {

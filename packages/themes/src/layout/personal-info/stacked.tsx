@@ -1,7 +1,6 @@
 import type { ResumePersonalInfo } from '@resumify/shared'
 import type { PersonalInfoSpacing } from './types'
 import { Icon } from '@iconify/react'
-
 import { getNameFromUrl, normalizeUrl } from '@resumify/shared'
 import { Markdown } from '../../markdown'
 import { DEFAULT_PERSONAL_INFO_SPACING } from './types'
@@ -31,11 +30,13 @@ function HeaderRenderer({
 }: HeaderRendererProps) {
   if (avatar) {
     return (
-      <section className={`
-        ${spacing.section}
-        border-b border-border
-        ${spacing.dividerPadding}
-      `} id={id}
+      <section
+        className={`
+          ${spacing.section}
+          border-b border-border
+          ${spacing.dividerPadding}
+        `}
+        id={id}
       >
         <div className="flex items-center gap-6">
           <div className="shrink-0">

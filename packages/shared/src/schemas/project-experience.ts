@@ -1,5 +1,4 @@
 import { z } from 'zod'
-
 import { workExperienceSchema } from './work-experience'
 
 export const projectExperienceSchema = workExperienceSchema.extend({

@@ -1,5 +1,4 @@
 import * as React from "react"
-
 import { cn } from "@resumify/shared/utils"
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {

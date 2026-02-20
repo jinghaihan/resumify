@@ -3,7 +3,6 @@ import { SnapshotButton } from '@resumify/chatbot'
 import { APPLICATION_NAME, APPLICATION_VERSION } from '@resumify/shared'
 import { DarkToggle, GitHubButton, LanguageSelector } from '@resumify/ui'
 import { Separator } from '@shadcn/components/ui/separator'
-
 import { ClearButton } from './actions/clear-button'
 import { ExportButton } from './actions/export-button'
 import { ImportButton } from './actions/import-button'

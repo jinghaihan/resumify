@@ -1,7 +1,6 @@
 import type { AIService } from '@resumify/ai'
 import type { Resume } from '@resumify/shared'
 import { resumeSchema } from '@resumify/shared'
-
 import { buildResumeUpdateSystemPrompt } from './prompts'
 
 interface GenerateResumeOptions {

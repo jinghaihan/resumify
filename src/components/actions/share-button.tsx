@@ -17,7 +17,6 @@ import LZString from 'lz-string'
 import { useTranslations } from 'next-intl'
 import { useRef } from 'react'
 import { toast } from 'sonner'
-
 import { ShareFormModal } from '../share-list/share-form-modal'
 
 export function ShareButton() {

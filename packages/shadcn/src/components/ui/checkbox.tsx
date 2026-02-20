@@ -1,8 +1,6 @@
 "use client"
-
 import * as React from "react"
 import { Checkbox as CheckboxPrimitive } from "radix-ui"
-
 import { cn } from "@resumify/shared/utils"
 import { CheckIcon } from "lucide-react"
 

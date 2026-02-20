@@ -24,7 +24,6 @@ import {
   typographySpacingRenderer,
 } from '@resumify/themes'
 import { useTranslations } from 'next-intl'
-
 import { ResumeLayout } from '../resume-layout'
 
 export interface ResumeRendererProps {

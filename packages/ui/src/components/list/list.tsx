@@ -1,5 +1,4 @@
 import type { MouseEvent } from 'react'
-
 import { Result } from '../result'
 import { ListCard } from './list-card'
 

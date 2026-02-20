@@ -1,4 +1,5 @@
 'use client'
+
 import { cn } from '@resumify/shared'
 import { usePersonalInfoStore } from '@resumify/store'
 import { PhotoUploader } from '@resumify/ui'

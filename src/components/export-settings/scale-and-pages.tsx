@@ -1,4 +1,5 @@
 'use client'
+
 import {
   Card,
   CardContent,
@@ -10,7 +11,6 @@ import { Input } from '@shadcn/components/ui/input'
 import { Label } from '@shadcn/components/ui/label'
 import { Slider } from '@shadcn/components/ui/slider'
 import { useTranslations } from 'next-intl'
-
 import { Field } from './field'
 
 interface PageRange {

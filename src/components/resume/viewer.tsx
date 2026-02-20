@@ -2,7 +2,6 @@
 
 import type { Resume } from '@resumify/shared'
 import { ResumeRenderer, SquaresGrid } from '@resumify/ui'
-
 import { Paper } from './paper'
 
 interface ResumeViewerProps {

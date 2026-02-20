@@ -1,6 +1,6 @@
 'use client'
-import type { PersonalInfoLayoutMode } from '@resumify/shared'
 
+import type { PersonalInfoLayoutMode } from '@resumify/shared'
 import { SelectCard } from '../select-card'
 
 interface PersonalInfoPreviewerProps {
@@ -15,8 +15,8 @@ export function PersonalInfoPreviewer({ layout }: PersonalInfoPreviewerProps) {
         border-border bg-background p-2
       "
       >
-        <div className="h-2 w-3/4 rounded bg-muted" />
-        <div className="h-2 w-1/2 rounded bg-muted/60" />
+        <div className="h-2 w-3/4 rounded-sm bg-muted" />
+        <div className="h-2 w-1/2 rounded-sm bg-muted/60" />
       </div>
     )
   }
@@ -28,8 +28,8 @@ export function PersonalInfoPreviewer({ layout }: PersonalInfoPreviewerProps) {
         border-border bg-background p-2
       "
       >
-        <div className="h-2 w-1/4 rounded bg-muted" />
-        <div className="h-2 w-1/2 rounded bg-muted/60" />
+        <div className="h-2 w-1/4 rounded-sm bg-muted" />
+        <div className="h-2 w-1/2 rounded-sm bg-muted/60" />
       </div>
     )
   }

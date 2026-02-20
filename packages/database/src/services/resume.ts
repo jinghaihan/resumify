@@ -1,5 +1,4 @@
 import type { DatabaseResume, DatabaseResumeListItem, Resetable } from '../types'
-
 import { and, desc, eq } from 'drizzle-orm'
 import { db } from '../db'
 import { resume } from '../schemas'

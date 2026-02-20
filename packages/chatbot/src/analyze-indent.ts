@@ -1,6 +1,5 @@
 import type { AIService } from '@resumify/ai'
 import { chatIntentSchema } from '@resumify/shared'
-
 import { buildAnalyzeIntentSystemPrompt } from './prompts'
 
 interface AnalyzeIntentOptions {

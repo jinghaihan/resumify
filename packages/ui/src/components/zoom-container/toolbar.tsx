@@ -2,7 +2,6 @@ import { cn } from '@resumify/shared'
 import { Button } from '@shadcn/components/ui/button'
 import { MinusIcon, MousePointerIcon, PlusIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-
 import { IconButton } from '../icon-button'
 import { ZOOM_MAX, ZOOM_MIN } from './hooks'
 

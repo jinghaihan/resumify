@@ -1,4 +1,5 @@
 'use client'
+
 import { useResumeStore } from '@resumify/store'
 import { IconButton, Modal } from '@resumify/ui'
 import { Button } from '@shadcn/components/ui/button'

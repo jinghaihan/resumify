@@ -1,11 +1,11 @@
 'use client'
+
 import type { DatabaseShareListItem } from '@resumify/database'
 import { fetchShares } from '@resumify/api'
 import { Header, InputSearch, List, ListSkeleton } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
 import { useCallback, useEffect, useState } from 'react'
 import { toast } from 'sonner'
-
 import { CardActions } from './actions'
 import { CardTitle } from './card-title'
 import { Metadata } from './metadata'

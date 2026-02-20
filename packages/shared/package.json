@@ -10,13 +10,13 @@
     "./utils": "./src/utils/index.ts"
   },
   "dependencies": {
-    "@resumify/ai": "workspace:*",
     "clsx": "catalog:frontend",
+    "tailwind-merge": "catalog:frontend",
     "date-fns": "catalog:prod",
     "nanoid": "catalog:prod",
-    "tailwind-merge": "catalog:frontend",
     "usehooks-ts": "catalog:prod",
-    "zod": "catalog:prod"
+    "zod": "catalog:prod",
+    "@resumify/ai": "workspace:*"
   },
   "devDependencies": {
     "streamdown": "catalog:frontend"

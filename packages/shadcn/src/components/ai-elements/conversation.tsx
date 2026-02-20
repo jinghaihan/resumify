@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@shadcn/components/ui/button";
 import { cn } from "@resumify/shared/utils";
 import { ArrowDownIcon } from "lucide-react";

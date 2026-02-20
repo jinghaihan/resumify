@@ -1,6 +1,5 @@
 import { useDroppable } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
-
 import { ResumeSection } from './section'
 
 interface ResumeColumnProps {

@@ -1,6 +1,5 @@
 import { RefreshCcwIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-
 import { Confirm } from './confirm'
 import { IconButton } from './icon-button'
 

@@ -8,7 +8,6 @@ import { Alert, AlertDescription, AlertTitle } from '@shadcn/components/ui/alert
 import { Info } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
-
 import { ProviderConfigCard } from './provider-config-card'
 
 function getDefaultConfig(providerId: ModelProviderType): ModelProviderConfig {

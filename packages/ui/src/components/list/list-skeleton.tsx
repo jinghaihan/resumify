@@ -22,9 +22,9 @@ export function ListSkeleton({ count = 5 }: ListSkeletonProps) {
             </CardTitle>
             <CardAction className="text-muted-foreground">
               <div className="flex items-center gap-2">
-                <Skeleton className="size-5 rounded" />
-                <Skeleton className="size-5 rounded" />
-                <Skeleton className="size-5 rounded" />
+                <Skeleton className="size-5 rounded-sm" />
+                <Skeleton className="size-5 rounded-sm" />
+                <Skeleton className="size-5 rounded-sm" />
               </div>
             </CardAction>
           </CardHeader>

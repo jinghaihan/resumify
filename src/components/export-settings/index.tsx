@@ -1,8 +1,8 @@
 'use client'
+
 import { exportSettings as exportSettingsGetter, useExportStore } from '@resumify/store'
 import { Header, ResetButton } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { Accessibility } from './accessibility'
 import { DisplayOptions } from './display-options'
 import { Margins } from './margins'

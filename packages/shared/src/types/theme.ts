@@ -1,5 +1,4 @@
 import type { StreamdownProps } from 'streamdown'
-
 import type { ProjectExperience, Section, Skill, WorkExperience } from '../schemas'
 import type { SectionDistribution } from './layout'
 import type { ResumePersonalInfo } from './resume'

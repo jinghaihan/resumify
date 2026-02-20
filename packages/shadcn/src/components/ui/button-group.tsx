@@ -1,6 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"
-
 import { cn } from "@resumify/shared/utils"
 import { Separator } from "@shadcn/components/ui/separator"
 

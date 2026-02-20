@@ -1,6 +1,5 @@
 import type { AIService } from '@resumify/ai'
 import { chatTitleSchema } from '@resumify/shared'
-
 import { buildChatTitlePrompt } from './prompts'
 
 interface GenerateTitleOptions {

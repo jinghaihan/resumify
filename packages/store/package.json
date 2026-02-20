@@ -15,10 +15,10 @@
     "./zoom-pan/*": "./src/modules/zoom-pan/*.ts"
   },
   "dependencies": {
+    "zustand": "catalog:frontend",
+    "nanoid": "catalog:prod",
     "@resumify/api": "workspace:*",
     "@resumify/database": "workspace:*",
-    "@resumify/shared": "workspace:*",
-    "nanoid": "catalog:prod",
-    "zustand": "catalog:frontend"
+    "@resumify/shared": "workspace:*"
   }
 }

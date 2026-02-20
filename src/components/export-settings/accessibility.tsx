@@ -1,4 +1,5 @@
 'use client'
+
 import {
   Card,
   CardContent,
@@ -8,7 +9,6 @@ import {
 } from '@shadcn/components/ui/card'
 import { Switch } from '@shadcn/components/ui/switch'
 import { useTranslations } from 'next-intl'
-
 import { Field } from './field'
 
 interface AccessibilityProps {

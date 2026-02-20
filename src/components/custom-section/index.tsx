@@ -1,8 +1,8 @@
 'use client'
+
 import { sections as sectionsGetter, useSectionStore } from '@resumify/store'
 import { AddButton, Header, ResetButton, SortableList } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { CustomSection } from './section'
 
 export function CustomSectionPanel() {

@@ -4,7 +4,6 @@
 import { MoonIcon, SunIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
-
 import { IconButton } from './icon-button'
 
 export function DarkToggle() {

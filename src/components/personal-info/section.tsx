@@ -1,4 +1,5 @@
 'use client'
+
 import type { PersonalInfo } from '@resumify/shared'
 import { IconPicker } from '@resumify/ui'
 import { Input } from '@shadcn/components/ui/input'

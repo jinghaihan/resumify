@@ -3,7 +3,6 @@ import { LANGUAGE_CONFIG } from '@resumify/shared'
 import { LanguagesIcon } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useTransition } from 'react'
-
 import { Dropdown } from './dropdown'
 import { IconButton } from './icon-button'
 

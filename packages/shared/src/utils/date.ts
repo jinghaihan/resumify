@@ -1,5 +1,4 @@
 import { differenceInDays, differenceInHours, format, formatDistanceToNow, isPast, parseISO } from 'date-fns'
-
 import { SHARE_EXPIRATION_TIME_OPTIONS } from '../constants'
 
 export function parseDate(dateString: string | null): Date | null {

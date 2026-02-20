@@ -8,12 +8,12 @@
     "@dnd-kit/core": "catalog:frontend",
     "@dnd-kit/sortable": "catalog:frontend",
     "@dnd-kit/utilities": "catalog:frontend",
-    "@iconify/react": "catalog:icons",
-    "@resumify/api": "workspace:*",
-    "@resumify/shared": "workspace:*",
     "class-variance-authority": "catalog:frontend",
-    "lucide-react": "catalog:icons",
     "react-image-crop": "catalog:frontend",
-    "sonner": "catalog:frontend"
+    "sonner": "catalog:frontend",
+    "@iconify/react": "catalog:icons",
+    "lucide-react": "catalog:icons",
+    "@resumify/api": "workspace:*",
+    "@resumify/shared": "workspace:*"
   }
 }

@@ -3,7 +3,6 @@
 import type { UIMessage } from 'ai'
 import { chatTitleSchema } from '@resumify/shared'
 import { useCallback, useEffect, useRef, useState } from 'react'
-
 import {
   createChatHistory,
   getActiveChatHistoryId,

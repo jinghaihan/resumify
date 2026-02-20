@@ -1,4 +1,5 @@
 'use client'
+
 import type { ModalRef } from '@resumify/ui'
 import { authClient } from '@resumify/auth'
 import { useResumeStore } from '@resumify/store'

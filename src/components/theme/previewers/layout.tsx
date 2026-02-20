@@ -1,6 +1,6 @@
 'use client'
-import type { LayoutMode } from '@resumify/shared'
 
+import type { LayoutMode } from '@resumify/shared'
 import { SelectCard } from '../select-card'
 
 interface LayoutPreviewerProps {
@@ -12,7 +12,7 @@ export function LayoutPreviewer({ layout }: LayoutPreviewerProps) {
     return (
       <div className="flex h-16 w-full items-center justify-center gap-1 p-2">
         <div className="
-          h-10 w-full rounded border-2 border-border bg-background
+          h-10 w-full rounded-sm border-2 border-border bg-background
         "
         />
       </div>

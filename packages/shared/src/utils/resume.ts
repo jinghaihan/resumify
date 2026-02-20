@@ -1,5 +1,4 @@
 import type { ZodError } from 'zod'
-
 import type { Resume } from '../schemas/resume'
 import { resumeSchema } from '../schemas/resume'
 

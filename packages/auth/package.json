@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@better-auth/ui": "catalog:prod",
+    "better-auth": "catalog:prod",
     "@resumify/database": "workspace:*",
-    "@resumify/i18n": "workspace:*",
-    "better-auth": "catalog:prod"
+    "@resumify/i18n": "workspace:*"
   }
 }

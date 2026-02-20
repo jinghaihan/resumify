@@ -1,4 +1,5 @@
 'use client'
+
 import type { AtomicThemeConfig } from '@resumify/shared'
 import { THEME_LABELS, TYPOGRAPHIES } from '@resumify/themes'
 import { Select } from '@resumify/ui'

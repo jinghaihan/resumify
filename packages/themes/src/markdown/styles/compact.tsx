@@ -41,7 +41,7 @@ export const compactMarkdownComponents: StreamdownProps['components'] = {
   ),
 
   p: ({ children }) => (
-    <p className="mt-0 mb-2.5 text-sm leading-snug text-muted-foreground">
+    <p className="mt-0 mb-2.5 text-sm/snug text-muted-foreground">
       {children}
     </p>
   ),
@@ -85,7 +85,7 @@ export const compactMarkdownComponents: StreamdownProps['components'] = {
   ),
 
   li: ({ children }) => (
-    <li className="mt-1 text-sm leading-snug text-muted-foreground">
+    <li className="mt-1 text-sm/snug text-muted-foreground">
       {children}
     </li>
   ),
@@ -103,7 +103,7 @@ export const compactMarkdownComponents: StreamdownProps['components'] = {
   pre: ({ children }) => (
     <pre className="
       mt-0 mb-2.5 overflow-x-auto rounded-md border border-border bg-muted p-3
-      font-mono text-xs leading-snug text-foreground
+      font-mono text-xs/snug text-foreground
     "
     >
       {children}

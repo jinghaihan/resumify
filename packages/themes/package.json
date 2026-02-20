@@ -5,12 +5,12 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@iconify/react": "catalog:icons",
-    "@resumify/shared": "workspace:*",
     "@streamdown/cjk": "catalog:frontend",
     "@streamdown/code": "catalog:frontend",
     "@streamdown/math": "catalog:frontend",
     "@streamdown/mermaid": "catalog:frontend",
-    "streamdown": "catalog:frontend"
+    "streamdown": "catalog:frontend",
+    "@iconify/react": "catalog:icons",
+    "@resumify/shared": "workspace:*"
   }
 }

@@ -6,7 +6,6 @@ import chromium from '@sparticuz/chromium-min'
 import LZString from 'lz-string'
 import { NextResponse } from 'next/server'
 import puppeteer from 'puppeteer-core'
-
 import { getChromiumPath } from '@/lib/chromium'
 
 export const runtime = 'nodejs'

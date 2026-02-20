@@ -5,8 +5,8 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
+    "ofetch": "catalog:prod",
     "@resumify/database": "workspace:*",
-    "@resumify/shared": "workspace:*",
-    "ofetch": "catalog:prod"
+    "@resumify/shared": "workspace:*"
   }
 }

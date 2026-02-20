@@ -1,4 +1,5 @@
 'use client'
+
 import type { AtomicThemeConfig } from '@resumify/shared'
 import {
   TECH_STACK_BACKGROUNDS,

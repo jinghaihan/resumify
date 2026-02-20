@@ -7,7 +7,6 @@ import {
 } from '@resumify/store'
 import { ResetButton, SortableList } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { BasicSection } from './basic-section'
 import { AddableCard } from './card'
 import { PersonalInfoSection } from './section'

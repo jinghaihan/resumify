@@ -1,12 +1,10 @@
 "use client"
-
 import * as React from "react"
 import {
   DayPicker,
   getDefaultClassNames,
   type DayButton,
 } from "react-day-picker"
-
 import { cn } from "@resumify/shared/utils"
 import { Button, buttonVariants } from "@shadcn/components/ui/button"
 import { ChevronLeftIcon, ChevronRightIcon, ChevronDownIcon } from "lucide-react"

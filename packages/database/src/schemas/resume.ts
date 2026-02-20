@@ -1,5 +1,4 @@
 import { jsonb, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core'
-
 import { user } from './auth'
 
 export const resume = pgTable('resume', {

@@ -1,5 +1,4 @@
 import { cn } from '@resumify/shared'
-
 import { TECH_STACK_BADGE_BASE } from './constants'
 
 interface TechStackProps {

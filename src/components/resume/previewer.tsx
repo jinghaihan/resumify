@@ -1,6 +1,5 @@
 import { useResume, useResumeStore } from '@resumify/store'
 import { ResumeRenderer, ZoomContainer } from '@resumify/ui'
-
 import { Paper } from './paper'
 
 export function ResumePreviewer() {

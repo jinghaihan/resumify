@@ -1,4 +1,5 @@
 'use client'
+
 import type { PaperFormat } from '@resumify/shared'
 import { PAPER_FORMAT_OPTIONS } from '@resumify/shared/constants'
 import { Select } from '@resumify/ui'
@@ -11,7 +12,6 @@ import {
 } from '@shadcn/components/ui/card'
 import { Switch } from '@shadcn/components/ui/switch'
 import { useTranslations } from 'next-intl'
-
 import { Field } from './field'
 
 interface PageFormatProps {

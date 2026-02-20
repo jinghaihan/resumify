@@ -1,8 +1,8 @@
 'use client'
+
 import { projectExperiences as projectExperiencesGetter, useProjectExperienceStore } from '@resumify/store'
 import { AddButton, Header, ResetButton, SortableList } from '@resumify/ui'
 import { useTranslations } from 'next-intl'
-
 import { ProjectExperienceSection } from './section'
 
 export function ProjectExperiencePanel() {

@@ -1,8 +1,8 @@
 'use client'
+
 import type { AtomicThemeConfig } from '@resumify/shared'
 import { LAYOUT_MODES, THEME_LABELS } from '@resumify/themes'
 import { useTranslations } from 'next-intl'
-
 import { LayoutCard } from './previewers'
 
 interface LayoutSectionProps {

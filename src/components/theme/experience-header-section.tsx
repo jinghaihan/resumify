@@ -1,4 +1,5 @@
 'use client'
+
 import type { AtomicThemeConfig } from '@resumify/shared'
 import { EXPERIENCE_HEADER_LAYOUT_MODES, THEME_LABELS } from '@resumify/themes'
 import { Select } from '@resumify/ui'

@@ -4,7 +4,6 @@ import { ChatBot } from '@resumify/chatbot'
 import { PostMessageEvent } from '@resumify/shared'
 import { cn } from '@resumify/shared/utils'
 import { useEffect, useState } from 'react'
-
 import { CustomSectionPanel } from '../custom-section'
 import { SettingsPanel } from '../export-settings'
 import { ModelProviderPanel } from '../model-provider'

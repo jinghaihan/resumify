@@ -4,7 +4,6 @@ import type { OpenAIProvider } from '@ai-sdk/openai'
 import type { ZhipuProvider as ZaiProvider } from '@ai-sdk/zai'
 import type { ModelMessage } from 'ai'
 import type { ZodType } from 'zod'
-
 import type { SUPPORTED_MODEL_PROVIDERS } from './providers'
 
 export interface ModelProvider {

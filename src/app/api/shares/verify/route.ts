@@ -1,5 +1,4 @@
 import type { NextRequest } from 'next/server'
-
 import process from 'node:process'
 import { shareService } from '@resumify/database'
 import { cookies } from 'next/headers'

@@ -1,6 +1,6 @@
 'use client'
-import type { ThemePreset } from '@resumify/shared'
 
+import type { ThemePreset } from '@resumify/shared'
 import { SelectCard } from '../select-card'
 
 interface PresetCardProps {

@@ -1,4 +1,5 @@
 'use client'
+
 import { useResumeStore } from '@resumify/store'
 import { Confirm, IconButton } from '@resumify/ui'
 import { BrushCleaningIcon } from 'lucide-react'

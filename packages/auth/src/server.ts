@@ -1,5 +1,4 @@
 import type { NextRequest } from 'next/server'
-
 import process from 'node:process'
 import { db } from '@resumify/database'
 import { betterAuth } from 'better-auth'
