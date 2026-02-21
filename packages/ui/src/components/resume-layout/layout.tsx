@@ -26,6 +26,7 @@ interface ResumeLayoutProps {
   renderSection: (id: string) => React.ReactNode
   onChange?: (columns: SectionDistribution) => void
   draggable?: boolean
+  columnContentClassName?: string
 }
 
 export function ResumeLayout({
@@ -34,6 +35,7 @@ export function ResumeLayout({
   renderSection,
   onChange,
   draggable = true,
+  columnContentClassName,
 }: ResumeLayoutProps) {
   const [activeId, setActiveId] = useState<string | null>(null)
   const isMounted = useIsMounted()
@@ -45,23 +47,45 @@ export function ResumeLayout({
   )
 
   const columnIds = Object.keys(columns)
+  const layoutClassName = 'flex'
+
+  const getColumnWidth = (columnId: string): string => {
+    const isSidebarMainLayout = columnIds.length === 2
+      && columnIds.includes('sidebar')
+      && columnIds.includes('main')
+
+    if (isSidebarMainLayout)
+      return columnId === 'sidebar' ? '30.00' : '70.00'
+
+    return (100 / columnIds.length).toFixed(2)
+  }
 
   const findColumnOfSection = (sectionId: string): string | null => {
     return Object.entries(columns).find(([, sections]) => sections.includes(sectionId))?.[0] ?? null
   }
 
   const renderColumnContent = (columnId: string, children: React.ReactNode): React.ReactNode => {
+    const stickyClassName = columnId === 'sidebar'
+      ? 'sticky top-6 h-fit'
+      : ''
+    const contentClassName = [columnContentClassName, stickyClassName].filter(Boolean).join(' ')
+    const content = contentClassName
+      ? <div className={contentClassName}>{children}</div>
+      : children
+
     if (renderColumn) {
-      return renderColumn(columnId, children)
+      return renderColumn(columnId, content)
     }
 
-    const columnWidth = (100 / columnIds.length).toFixed(2)
+    const columnWidth = getColumnWidth(columnId)
+    const columnClassName = columnId === 'sidebar' ? 'dark bg-background' : undefined
     return (
       <div
         key={columnId}
+        className={columnClassName}
         style={{ width: `${columnWidth}%` }}
       >
-        {children}
+        {content}
       </div>
     )
   }
@@ -138,7 +162,7 @@ export function ResumeLayout({
   // Static (non-draggable) layout
   if (!draggable) {
     return (
-      <div className="flex">
+      <div className={layoutClassName}>
         {columnIds.map(columnId => (
           renderColumnContent(
             columnId,
@@ -163,7 +187,7 @@ export function ResumeLayout({
       onDragEnd={handleDragEnd}
     >
       <SortableContext items={columnIds} strategy={horizontalListSortingStrategy}>
-        <div className="flex">
+        <div className={layoutClassName}>
           {columnIds.map(columnId => (
             renderColumnContent(
               columnId,

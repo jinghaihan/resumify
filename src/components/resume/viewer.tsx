@@ -19,6 +19,7 @@ export function ResumeViewer({ resumeData }: ResumeViewerProps) {
         <ResumeRenderer
           resume={resumeData}
           draggable={false}
+          columnContentClassName="p-6"
         />
       </Paper>
     </SquaresGrid>

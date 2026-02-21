@@ -32,6 +32,7 @@ import { useProjectExperienceStore } from '../project-experience'
 import { useSectionStore } from '../section'
 import { useSkillStore } from '../skill'
 import { useWorkExperienceStore } from '../work-experience'
+import { sectionDistributionForLayout } from './utils'
 
 export const useResumeStore = create<ResumeStore>()(
   persist(
@@ -176,15 +177,33 @@ export const useResumeStore = create<ResumeStore>()(
       updateThemeConfig: <K extends keyof AtomicThemeConfig>(
         key: K,
         value: AtomicThemeConfig[K],
-      ) => set(state => ({
-        presentation: {
-          ...state.presentation,
-          themeConfig: {
-            ...state.presentation.themeConfig,
-            [key]: value,
+      ) => set((state) => {
+        const nextThemeConfig = {
+          ...state.presentation.themeConfig,
+          [key]: value,
+        } as AtomicThemeConfig
+
+        if (key === 'layout') {
+          return {
+            presentation: {
+              ...state.presentation,
+              themeConfig: nextThemeConfig,
+              sectionDistribution: sectionDistributionForLayout(
+                value as AtomicThemeConfig['layout'],
+                state.presentation.sectionDistribution,
+                DEFAULT_SECTION_DISTRIBUTION,
+              ),
+            },
+          }
+        }
+
+        return {
+          presentation: {
+            ...state.presentation,
+            themeConfig: nextThemeConfig,
           },
-        },
-      })),
+        }
+      }),
 
       resetThemeConfig: () => {
         const presetId = get().presentation.theme

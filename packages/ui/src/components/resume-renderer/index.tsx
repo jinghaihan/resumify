@@ -33,6 +33,7 @@ export interface ResumeRendererProps {
   draggable?: boolean
   onLayoutChange?: (distribution: SectionDistribution) => void
   className?: string
+  columnContentClassName?: string
 }
 
 export function ResumeRenderer({
@@ -42,6 +43,7 @@ export function ResumeRenderer({
   draggable = false,
   onLayoutChange,
   className,
+  columnContentClassName,
 }: ResumeRendererProps) {
   const t = useTranslations()
 
@@ -175,6 +177,7 @@ export function ResumeRenderer({
         renderColumn={undefined}
         onChange={onLayoutChange}
         draggable={draggable}
+        columnContentClassName={columnContentClassName}
       />
     </div>
   )

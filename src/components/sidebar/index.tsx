@@ -39,7 +39,7 @@ export function Sidebar() {
   }
 
   return (
-    <div className="flex size-full">
+    <div className="flex size-full bg-muted/50">
       <Navigation onChange={handleNavigate} />
 
       <div className="h-full flex-1 overflow-x-hidden overflow-y-auto p-4">
